@@ -1,0 +1,157 @@
+body, html{
+    height: 95.4%;
+    margin: 0;
+    background-image: url('linkedin.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+/*the bigimage
+.bigimage{
+    background-image: url('lasucodes1.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}*/
+/*top navbar containing the lasucode and sigin in form*/
+.navbar{
+    overflow: hidden;
+    background-color: #283e4a;
+}
+/*navbar content*/
+.navbar div{
+    display: block;
+    padding: 5px 450px 5px 150px;
+    color:green;
+    font-family: courier;
+    font-size:x-large;
+    font-weight:bold;
+    float: left;
+
+}
+/*diff colors for the "lasucode" in the navbar*/
+#las{
+    color:red;
+}
+
+#uco{
+    color:yellow;
+}
+
+
+/*input in the signin form*/
+input[placeholder]{
+    padding: 4px;
+    border:1px solid silver;
+    border-radius:2px;
+}
+
+/*the  signin botton*/
+#signin{
+    border: 1px solid ;
+    border-radius: 2px;
+    padding: 3px 10px 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+/*forget password?*/
+#forget{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    font-size: 7px;
+}
+
+#top{
+    padding: 7px;
+
+}
+/*heading in the signup form*/
+#word{
+    background-color: #f6f8fa;
+    padding:10px 40px 10px 40px;
+    border-radius: 5px 5px 0px 0px;
+    width: 25%;
+    
+}
+/*the whole signup form at the center of the page*/
+#center{
+    background-color: rgb(237, 240, 243);
+    padding:40px;
+    border-radius: 0px 0px 5px 5px;
+    width: 25%;
+    border-top: 1.5px solid rgb(191, 197, 202);
+    font-size: 15px;
+    
+    
+}
+/*sign up form label*/
+label{
+    float: left;
+}
+
+/*input class=middle*/
+.middle{
+    /*float:left;*/
+    width: 95%;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    /*box-sizing: border-box;*/
+    border-radius: 2px;
+    padding:7px;
+}
+/*terms and condition for signing up*/
+
+#terms{
+    color:rgb(122, 121, 121);
+    font-size: 11px;
+}
+/*join now botton*/
+.joinnow{
+    background-color:#0073b1; 
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+/*the find collegue container*/
+#container {
+    
+    
+    color: #c5c8d2;
+    font-size: 14px;
+    
+    text-align: center;
+    bottom: 0;
+    background-color: #434649;
+    width: 100%;
+
+}
+
+.bottom{
+    padding:  20px;
+}
+/*search botton*/
+.search{
+    border: 1px solid white;
+    color: #818486;
+    border-radius: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+/*hope my code was easy to read and understand
+will try to make it better.*/
+

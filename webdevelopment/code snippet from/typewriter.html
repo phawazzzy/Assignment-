@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Typewriter</h1>
+
+<button onclick="typeWriter()">Click me</button>
+
+<p id="demo" style="color:green; text-align:center"></p>
+
+<script>
+let i = 0;
+let txt = 'my name is kareem fawas olamilekan';
+let speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
