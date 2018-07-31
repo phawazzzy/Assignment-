@@ -10,9 +10,11 @@
 </head>
 <body style="margin:10px">
 
-
-    <marquee behavior=scroll direction="left" scrollamount="10" scrolldeley="100"><p id="demo"></p></marquee>
+    <input type="button" value="click me" onclick="myFunction()" />
+   <!-- <marquee behavior=scroll direction="left" scrollamount="10" scrolldeley="100"><p id="demo"></p></marquee>-->
+    
     <script>
+       function myFunction(){
         let name = prompt("what is your name?");
         let pick = prompt("pick a number between 1 and 100");
         let random = Math.floor(Math.random() * 100) + 1;
@@ -36,7 +38,10 @@
         {
             document.getElementById("demo").innerHTML = (name + " am sorry, baba ijebu is not your way");
         }
+       }
     
     </script>
+
+<marquee behavior=scroll direction="left" scrollamount="10" scrolldeley="100"><p id="demo"></p></marquee>
 </body>
 </html>
