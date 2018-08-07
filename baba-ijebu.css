@@ -14,21 +14,62 @@ body{
     background-color: rgb(56, 45, 160);
 }
 
-div{
-    display: block;
-    height: 50px;
-    background-color: crimson;
-    color:goldenrod;
-}
 
 h1{
     text-align: center
 }
 
-button{
-    width:100px;
+input[type=button]{
+    border: 1px solid;
+    border-radius: 5px;
     padding: 10px;
     color:green;
     box-shadow: burlywood
+}
+.topbar{
+    display: block;
+    background-color: brown;
+    height: 100px;
+}
+
+img{
+    padding-left:10px;
+    padding-top:10px
+}
+span{
+    color:grey;
+    font-size:xx-large;
+    font-weight: bolder;
+
+    
+}
+
+.bets{
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 300px;
+    
+}
+
+li{
+    float:left;
+    padding-left: 20px
+}
+
+li a{
+    color:white;
+    text-decoration: none;
+    padding: 5px
+}
+
+li a:hover{
+    border: 1px solid white ;
+    border-radius: 4px;
+    background-color: aliceblue;
+    color:red;
+}
+
+li a:active{
+    border: 2px solid white;
 }
 

@@ -10,15 +10,55 @@
 </head>
 <body style="margin:10px">
 
-    <input type="button" value="click me" onclick="myFunction()" />
-   <!-- <marquee behavior=scroll direction="left" scrollamount="10" scrolldeley="100"><p id="demo"></p></marquee>-->
-    
+    <div class="topbar">
+        <span><img src="lasucodes1.jpg" width="30px" height="30px" alt="logo">
+        LASU-CODE BET</span>
+
+        <center>  <div class="typeofbet" style="padding-left: 20px">
+                    <ul class="bets">
+                        <li><a href="#">lotto</a></li>
+                        <li><a href="#">sport betting</a></li>
+                        <li><a href="baba-ijebu.html">instant bet</a></li>
+                    </ul>
+                </div>
+        </center>
+
+    </div>
+
+    <div class="content">
+        <h3>
+            welcome to LASU-CODE bet site. This is just for fun though.
+        </h3>
+
+        <p>
+            we have different type of bet on our site, the one that is up and running is our instant bet.
+            <br>
+            Instant bet is a kind of bet inwhich you get to see your result immediately after playing.
+        </p>
+
+        <legend>HOW TO PLAY INSTANT BET</legend>
+
+        <P>
+            The computer has been programmed to pick any number within the range of 1 and 100.<br>
+            Then the computer will ask you to guess the number it has picked, if you get the exact number you win <b>#5 000 000, a brand new suv, and house</b>
+            <br>
+            If the difference between the number picked by the computer and the number you pick is in the range of 1 and 5 you win <b>#1 000 000 and a toyota camry</b>
+            <br>
+            If the difference between the number picked by the computer and the number you pick is in the range of 6 and 10 you win <b>#500 000</b>
+            <br> 
+            if the number you pick isnt at this range you lose and you might want to try again.
+        </P>
+
+    </div>
+
+    <input type="button" value="PLAY AND WIN" onclick="myFunction()" />
+   
     <script>
        function myFunction(){
         let name = prompt("what is your name?");
         let pick = prompt("pick a number between 1 and 100");
         let random = Math.floor(Math.random() * 100) + 1;
-     alert("TERMS and CONDITION \n Befroe the result is out you promise that you will accept any result the computer gives and you wont create any problem if you agree to our terms and condition, hit 'ENTER' on the keyboard to view your result ");
+     alert("TERMS and CONDITION \n Before the result is out you promise that you will accept any result the computer gives and you wont create any problem. \n if you agree to our terms and condition, hit 'ENTER' on the keyboard to view your result ");
         //alert(name = +" if you agree to our terms and condition, hit 'ENTER' on the keyboard to view your result ")
 
         if (random == pick){
@@ -42,6 +82,6 @@
     
     </script>
 
-<marquee behavior=scroll direction="left" scrollamount="10" scrolldeley="100"><p id="demo"></p></marquee>
+<p ><marquee id="demo" behavior=scroll direction="left" scrollamount="10" scrolldeley="100"></marquee></p>
 </body>
 </html>

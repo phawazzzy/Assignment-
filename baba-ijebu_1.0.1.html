@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>baba-ijebu_1.0.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--<script src="main.js"></script>-->
+</head>
+<body>
+    <script> 
+    
+   let compRandom = function funcRandom(){
+    let arrRandom =[];
+    for (let i=0; i<5; i++){
+
+    arrRandom.push( Math.floor(Math.random() *100) +1);
+    }
+
+    let str ="";
+    for(let i=0; i<5; i++){
+        str += "<br />" +arrRandom[i]
+    }
+ document.writeln(str);
+}
+compRandom();
+"<br />"
+
+let userInput = function input(){
+    let request =[];
+    for (let i=0; i<5; i++){
+      request.push(prompt("pick five numbers"))
+      if(request[i]>99){
+        alert("please choose within the range")
+          break;
+          
+          
+
+      }
+      else {
+          continue;
+      }
+    }
+}
+    
+userInput();
+console.log(request)
+
+let threeTofourNum = request[i].length >=3 && request[i].length <=4;
+let twoNumbers = request[i].length == 2;
+
+    if(request[i]  == arrRandom[i]){
+    document.write("you have won 20 million and a trip to dubia");
+}
+else if(threeTofourNum == arrRandom[i].length<4){
+    document.write("you won 15 million naira and a trip to calaber");
+}
+
+else if (twoNumbers == arrRandom[i].length ==2){
+    document.write("you win 10 million naira and a night at hi-impact ")
+}
+
+else {
+    document.write("baba ijebu isnt nt your way")
+}
+
+console.log(threeTofourNum)
+        
+    </script>
+</body>
+</html> 
