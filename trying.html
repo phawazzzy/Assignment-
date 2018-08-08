@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>try</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+   <!-- <script src="main.js"></script>-->
+</head>
+<body>
+    <script>
+        //users to input numbers
+        let arrChoice =[];
+      function addChoice(){
+          for (let i=0; i<5; i++){
+                arrChoice.push(prompt("please choose five numbers"));
+                if(arrChoice[i]>99){
+                alert("please choose within the range of 1 and 99");
+                break;}
+
+                else{
+                    continue;
+                }
+
+                
+          }
+console.log("the number you choose are " +arrChoice)
+      }  
+      addChoice();
+      
+
+//computer to generate random numbers
+        let arrRandom = [];
+        function addRandom(){
+             for (let i=0; i<5; i++){
+                 arrRandom.push(Math.floor(Math.random() *100) +1);
+                 }
+
+        }
+
+        function showRandom(){
+            for (let i=0; i<5; i++){
+                console.log(arrRandom[i])
+            }
+        }
+        console.log("the winning numbers are below");
+        console.log(addRandom());
+        console.log(showRandom());
+
+        //so now, the conditions to win
+
+        document.write(arrChoice.slice(0,4))
+
+      
+
+    </script>
+</body>
+</html>
