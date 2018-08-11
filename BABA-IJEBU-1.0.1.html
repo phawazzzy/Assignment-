@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>baba-ijebu-1.0.1(bugfixed)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+    
+    
+        //computer to generate random numbers
+        let arrRandom = [];
+        function addRandom(){
+             for (let i=0; i<5; i++){
+                 let random =Math.floor(Math.random() *99) +1
+                 arrRandom.push(random.toString());
+                 }
+
+        }
+
+        function showRandom(){
+            for (let i=0; i<5;i++){
+                console.log(arrRandom[i])
+            }
+        }
+        console.log("the winning numbers are below");
+        console.log(addRandom());
+        console.log(showRandom());
+
+         //users to input numbers
+         let arrChoice =[];
+      function addChoice(){
+          for (let i=0; i<5; i++){
+                arrChoice.push(prompt("please choose five numbers"));
+                if(arrChoice[i]>99){
+                alert("please choose within the range of 1 and 99");
+                break;}
+
+                else{
+                    continue;
+                }
+
+             }
+console.log("the number you choose are " +arrChoice)
+      }  
+      addChoice();
+
+
+//commonValues
+
+let commonValues=[];
+    for (let i=0; i<arrRandom.length; i++){
+        for(let j=0; j<arrChoice.length; j++){
+            if(arrRandom[i] === arrChoice[j]){
+                commonValues.push(arrRandom[i]);
+            }
+        }
+    }
+
+    
+      
+      //conditions
+      let diffOfRange1To5 =[];
+      let diffOfRange6To10 =[];
+      for (i=0; i<arrRandom.length; i++){
+          for(j=0; j<arrChoice.length; j++ ){
+              if(arrRandom[i]-arrChoice[j] >=1 && arrRandom[i]-arrChoice[j]<=5){
+                  diffOfRange1To5.push(arrRandom[i])
+              }
+              else if(arrRandom[i]- arrChoice[j] >=6 && arrRandom[i] - arrChoice[j]<=10){
+                  diffOfRange6To10.push(arrRandom[i])
+              }
+          }
+      }
+
+      
+
+      if(commonValues.length == 5){
+          console.log("you have won 20 million naira and trip to dubai")
+      }
+      else if(commonValues.length ==3 || commonValues.length ==4){
+          console.log("you have won 15 million naira and a trip to calaber")
+      }
+
+      else if(commonValues.length ==2){
+          console.log("you have won 10 million and a night at hi-impact")
+      }
+      else if (diffOfRange1To5.length>=2){
+          console.log("you have won 5 million and one ijapa car")
+      }
+      else if(diffOfRange6To10.length>=2){
+          console.log("you have 1 million naira only ")
+      }
+      
+    else{
+        console.log("baba ijebu isnt you way")
+    }
+    </script>
+</body>
+</html>
