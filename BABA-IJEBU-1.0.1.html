@@ -24,12 +24,15 @@
 
         function showRandom(){
             for (let i=0; i<5;i++){
-                console.log(arrRandom[i])
+                document.write(arrRandom[i])
+                document.write("<br />")
             }
         }
-        console.log("the winning numbers are below");
-        console.log(addRandom());
-        console.log(showRandom());
+        document.writeln("the winning numbers are below");
+        document.writeln(addRandom());
+        document.write("<br />")
+        document.writeln(showRandom());
+        document.write("<br />")
 
          //users to input numbers
          let arrChoice =[];
@@ -45,7 +48,8 @@
                 }
 
              }
-console.log("the number you choose are " +arrChoice)
+document.write("the number you choose are " +arrChoice);
+document.write("<br />")
       }  
       addChoice();
 
@@ -80,24 +84,24 @@ let commonValues=[];
       
 
       if(commonValues.length == 5){
-          console.log("you have won 20 million naira and trip to dubai")
+          document.write("you have won 20 million naira and trip to dubai")
       }
       else if(commonValues.length ==3 || commonValues.length ==4){
-          console.log("you have won 15 million naira and a trip to calaber")
+          document.write("you have won 15 million naira and a trip to calaber")
       }
 
       else if(commonValues.length ==2){
-          console.log("you have won 10 million and a night at hi-impact")
+          document.write("you have won 10 million and a night at hi-impact")
       }
       else if (diffOfRange1To5.length>=2){
-          console.log("you have won 5 million and one ijapa car")
+          document.write("you have won 5 million and one ijapa car")
       }
       else if(diffOfRange6To10.length>=2){
-          console.log("you have 1 million naira only ")
+          document.write("you have 1 million naira only ")
       }
       
     else{
-        console.log("baba ijebu isnt you way")
+        document.write("baba ijebu isnt you way")
     }
     </script>
 </body>
