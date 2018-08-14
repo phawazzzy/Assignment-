@@ -1,0 +1,122 @@
+body{
+    background-color: #829aca
+ }
+#homelink{
+    float: left;
+}
+input/*[type=text], input[type=password], input[type=email]*/{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+input[type=submit]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: green;
+    color:white;
+}
+
+input[type]/*submit], input[type=text] input*/:hover{
+    background-color: rgba(204, 204, 204, 0.705);
+    color: white;
+
+}
+
+#container-login{
+    background-color: rgb(11, 47, 93);
+    padding:40px;
+    border-radius: 10px;
+    width: 40%;
+    /*position: fixed;
+    align-content: center;*/
+}
+
+b{
+    color:rgb(145, 18, 208);
+    font-size: small
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.726);
+    color:rgb(236, 56, 24);
+    padding: 3px;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+
+button{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #9018cf;;
+    color:white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 9px #999;
+}
+
+button:hover{
+    background-color: rgb(15, 88, 36)
+}
+
+button:active {
+    background-color: #08f810;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+ button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .submit{
+    color:black;
+    width:50%;
+    font-size:medium;
+
+  }
+
+  .submit:hover{
+    background-color:#a72e2e
+  }

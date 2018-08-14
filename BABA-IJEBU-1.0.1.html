@@ -68,10 +68,10 @@ let commonValues=[];
       let diffOfRange6To10 =[];
       for (i=0; i<arrRandom.length; i++){
           for(j=0; j<arrChoice.length; j++ ){
-              if(arrRandom[i]-arrChoice[j] >=1 && arrRandom[i]-arrChoice[j]<=5){
+              if(Math.abs(arrRandom[i]-arrChoice[j] >=1 && arrRandom[i]-arrChoice[j]<=5)){
                   diffOfRange1To5.push(arrRandom[i])
               }
-              else if(arrRandom[i]- arrChoice[j] >=6 && arrRandom[i] - arrChoice[j]<=10){
+              else if(Math.abs(arrRandom[i]- arrChoice[j] >=6 && arrRandom[i] - arrChoice[j]<=10)){
                   diffOfRange6To10.push(arrRandom[i])
               }
           }
