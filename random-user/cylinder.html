@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cylinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+    body{
+        background-color: darkgrey
+    }
+    #result{
+        
+        position:absolute;
+        top:50%;
+        padding-left: 400px;
+        margin:auto;
+        color:crimson;
+        
+    }
+
+    #mainResult{
+        display: inline;
+        padding-left:250px;
+        color:green;
+    }
+    button{
+        background-color: green;
+        color:white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width:50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid green;
+        border-radius: 5px;
+    }
+
+    button:hover{
+        content: equals;
+        background:floralwhite;
+        color:green;
+        
+    }
+
+</style>
+
+<body>
+    
+        <div id="result">
+        <center><button id="retry" >click to calculate the vol of a cylinder</button></center>
+        <h1>THE VOLUME OF THE CYLINDER IS:</h1>
+        <p id="demo"><h3 id="mainResult"></h3></p>
+        </div>
+
+    <script>
+    function cylinder(){
+        let volOfcylinder = {
+            height: prompt("input height"),
+            radius: prompt("input radius"),
+            volume : function(){
+                return parseFloat((Math.PI * Math.pow(this.radius, 2) * this.height).toFixed(3));
+                
+            }
+        };
+        y= volOfcylinder.volume()
+        document.getElementById("mainResult").innerHTML= y;
+        }
+        //RETRY BUTTON SCRIPT
+    let retryButton = document.getElementById("retry");
+
+    retryButton.onclick = function(){
+        let answer= document.getElementById("mainResult")
+        if(answer.style.display == "block"){
+            answer.style.display = "none";
+            retryButton.innerHTML ="SHOW RESULT"
+            cylinder();
+           }
+        
+
+        else{
+            answer.style.display="block"
+            retryButton.innerHTML="calculate  volume"
+        }
+    }
+   
+document.write("<br />")
+//please help me check this it output is undefined ..why is that
+        let detail = {
+            firstName: "fawas",
+            lastname : "kareem",
+            fullName : function(){
+                this.firstName + "" + this.lastname;
+            }
+        };
+        x = detail.fullName();
+        console.log(x)
+
+        
+    </script>
+</body>
+</html>
